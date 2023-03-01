@@ -1,0 +1,478 @@
+/* ---------------------------------    MENU HAMBURGUESA    ------------------------- */
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  /* ------------------------     HEADER     ---------------------- */
+  .navbar-list {
+    position: absolute;
+    top: 75px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color5),
+      rgb(161, 161, 161)
+    );
+
+    border: 2px solid var(--color1);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  /* Mostra/Ocultar menu responsive */
+  .open-menu {
+    display: flex;
+  }
+  .navbar-list a {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+  .menu-label img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .menu-icon {
+    margin-right: 15px;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  /* Borde Carrito */
+  .card-icon {
+    height: 40px;
+  }
+
+  /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
+  .section-login {
+    overflow: auto;
+  }
+  .divcontenedorlogin {
+    width: min(70%, 1000px);
+    height: min(90%, 500px);
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  /* -------- INICIAR SESION ------- */
+  .divIniciar {
+    text-align: center;
+    height: 50%;
+    width: min(100%, 500px);
+    gap: 15px;
+    border-right: none;
+    padding-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 2px var(--color4);
+  }
+
+  .divIniciar div {
+    gap: 8px;
+  }
+
+  .divIniciar h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-Iniciar {
+    font-size: 0.9rem;
+  }
+
+  /*--------- REGISTRARSE -----------*/
+
+  .divRegistrarse h2 {
+    font-size: 1.5rem;
+  }
+
+  /* INPUTS REGISTRARSE */
+  .divRegistrarse {
+    height: 50%;
+    width: min(100%, 500px);
+  }
+
+  .divRegistrarse div {
+    min-width: (60%, 300px);
+  }
+  .registrarse {
+    padding: 4px;
+    letter-spacing: 1px;
+  }
+
+  .label-registrarse {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .submit-registro {
+    padding: 9px 50px;
+    font-size: 0.8rem;
+  }
+  /* --------------------------------------------     HERO         -------------------------------------------*/
+
+  .hero-divbotones {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /*-------------------------------------------     BENEFICIOS    -----------------------------------------  */
+
+  #mainbeneficios h3 {
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .beneficioscontenedor {
+    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+  }
+  .divcard {
+    flex-direction: row;
+    width: 90%;
+    height: 26%;
+    padding: 20px;
+  }
+
+  .imgpack,
+  .imgexcursion,
+  .imgdescuento {
+    height: 60px;
+    width: 60px;
+    order: 2;
+  }
+  .divcard-up {
+    height: 100%;
+    width: 30%;
+    border-right: solid 1px var(--color4);
+  }
+  .divcard span {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color5);
+  }
+  .divcard p {
+    width: 70%;
+    font-weight: 500;
+    color: var(--color5);
+  }
+
+  /*-------------------------------------------     DESTINO       -----------------------------------------  */
+  .divdestinos {
+    gap: 15px;
+    padding: 25px;
+  }
+  .card-destino {
+    height: 410px;
+    width: 470px;
+  }
+
+  .dimg {
+    height: 250px;
+    width: 470px;
+  }
+
+  .card-destino-down h3 {
+    font-size: 32px;
+  }
+
+  .down-items-1 p {
+    font-size: 20px;
+  }
+
+  .down-items-1 span {
+    font-size: 23px;
+    font-weight: 800;
+  }
+
+  /* ------------------------------------------     CONTACTO      -----------------------------------------  */
+  .divmapa {
+    height: 60%;
+    width: 90%;
+  }
+  .divcontacto-down {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divform {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  .divinputs {
+    width: 100%;
+  }
+  .submit-contacto {
+    padding: 11px 12px;
+    border-radius: 8px;
+  }
+
+  /* ----------------------------------------------------    FOOTER    ------------------------------------------ */
+  footer {
+    height: 130px;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    width: auto;
+    text-align: center;
+    order: 2;
+  }
+  .logok0footer {
+    display: none;
+  }
+}
+@media (max-width: 992px) and (orientation: landscape) {
+  .hero-divbotones {
+    flex-direction: row;
+  }
+
+  .divcontenedorlogin {
+    flex-direction: row;
+  }
+
+  .divRegistrarse {
+    height: 50%;
+    width: min(100%, 500px);
+  }
+  .divIniciar {
+    height: 50%;
+    width: min(100%, 500px);
+  }
+  .btn-contraseña {
+    padding: 5px 9px;
+    background-color: var(--color4);
+    border-radius: 7px;
+    border: none;
+    color: var(--color5);
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+  .btn-Iniciar,
+  .submit-registro {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 5px 13px;
+    border-radius: 7px;
+  }
+}
+
+/*-----------------------------------------------     MEDIA 576px    ----------------------------------------------- */
+@media (max-width: 576px) {
+  /* ------------------------------------------   HEADER    ----------------------------------------- */
+  header {
+    gap: 30px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  .logo {
+    height: 55px;
+  }
+  /* *************************      Login registro ************************ */
+  /* quitar el borde del medio en horizontal,
+  cuando pase a vertical */
+  .divIniciar {
+    border-right: none;
+  }
+
+  /* ------------------------------------------     HERO    ------------------------------------------- */
+  .mainhero__divtexto h1 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+  }
+  .mainhero__divtexto h2 {
+    display: none;
+  }
+
+  .hero-btnRegistrate,
+  .hero-btnDestinos {
+    font-size: 0.8rem;
+    padding: 10px 25px;
+    gap: 8px;
+  }
+
+  /* --------------------------------------     BENEFICIOS     --------------------------------------- */
+
+  #mainbeneficios h3 {
+    font-size: 1.4rem;
+    width: 90%;
+    font-weight: 600;
+  }
+
+  .beneficioscontenedor {
+    gap: 25px;
+    height: 95%;
+    padding: 15px 0;
+  }
+
+  .divcard {
+    flex-direction: column;
+    height: 26%;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .divcard-up {
+    height: 30%;
+    flex-direction: row;
+    border-right: none;
+  }
+  .divcard-up span {
+    order: 2;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .imgexcursion,
+  .imgdescuento {
+    height: 70px;
+    width: 70px;
+  }
+  .imgpack {
+    height: 60px;
+    width: 60px;
+  }
+  .divcard p {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  /* ---------------------------------------     DESTINOS    -------------------------------------------- */
+
+  /* div categorias botones */
+  .categorias {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
+  /* botones de categorias  */
+  .category {
+    width: auto;
+    padding: 7px 7px;
+    border: none;
+    color: var(--background);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+  }
+  .divdestinos {
+    gap: 18px;
+  }
+
+  .card-destino {
+    display: flex;
+    height: 260px;
+    width: 100%;
+  }
+
+  .card-destino-down {
+    height: 110px;
+    width: 100%;
+  }
+
+  .down-items-1 {
+    gap: 3px;
+    width: 90%;
+  }
+
+  .dimg {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .card-destino-down h3 {
+    font-size: 24px;
+  }
+
+  .down-items-1 p {
+    font-size: 12px;
+    width: auto;
+    font-weight: 500;
+  }
+
+  .down-items-1 span {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .down-items {
+    width: 100%;
+    display: flex;
+  }
+  .down-items button {
+    padding: 6px 8px;
+    font-size: 16px;
+  }
+
+  /* ---------------------------------------------------      CONTACTO     -------------------------------------------- */
+
+  .divmapa {
+    height: 70vh;
+  }
+
+  .divinputs {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .divinput-50 {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  .submit-contacto {
+    padding: 7px 8px;
+    border-radius: 8px;
+  }
+
+  .contacto-datos {
+    padding: 8px;
+  }
+  .submit-registro,
+  .btn-Iniciar {
+    width: 70%;
+    padding: 7px 20px;
+  }
+
+  /* -----------------------------------------------     FOOTER     ----------------------------------------- */
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .footer-div-logos {
+    gap: 25px;
+  }
+  .logofooter {
+    font-size: 25px;
+  }
+}

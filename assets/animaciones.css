@@ -1,0 +1,147 @@
+/* Para suavizar la transicion y dejar distancia entre la section y el header al moverse con los links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+/* Animacion en el hover de navbar-a(en el hover el subrayado se traslada  */
+
+.navbar-list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-list li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--color2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+/*GLASMORPHISM:
+  Básicamente, el concepto principal de esta tendencia es poner un fondo semitransparente que
+  añade un difuminado al fondo del div en el que se aplique. En este caso, lo usamos para que al abrir el menú
+  hamburguesa y el carrito lo demás de la página se vea borroso abajo de este div de clase overlay.
+  */
+
+.overlay {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /*Para que quede por encima del resto de las cosas*/
+
+  /*Efecto de Glassmorphismo*/
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.
+    Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código.*/
+.show-overlay {
+  display: block;
+}
+/* Trasladar el div del carrito ,menos velocidad  */
+
+.cart-icon {
+  transition: all 0.35s ease-out;
+}
+
+.cart-icon:hover,
+.logousuario:hover {
+  border: solid 2px var(--color3);
+  color: var(--color3);
+  transition: all 0.2s ease-in;
+}
+
+/* Hover para los botones "comprar","ConfirmarCompra","+","-","enviar" */
+
+.btn- {
+  background-color: var(--color4);
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.btn-:hover {
+  border: solid 2px var(--color3);
+  color: var(--color3);
+  transition: all 0.2s ease-in;
+  transform: scale(0.9);
+  color: #f1f1f1;
+  background: #ff6347;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  border: solid 2px var(--color3);
+  color: var(--color3);
+  transition: all 0.2s ease-in;
+  color: #f1f1f1;
+  background: #ff6347;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover para los botones comprar y vaciar del carrito */
+.btn-buy:hover,
+.btn-delete:hover {
+  transition: all 0.1s ease-in;
+  transform: scale(0.9);
+}
+
+/* ****** Animacion para hero aparecer texto o div***** */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-top {
+  from {
+    transform: translateY(-370px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.mainhero__divtexto {
+  animation: slide-top 1.7s ease-in-out;
+}
+.hero-btnRegistrate,
+.hero-btnDestinos {
+  animation: slide-left 2s ease-in-out;
+}
+
+.mainhero__divtexto h1,
+.mainhero__divtexto h2 {
+  animation: fade 2.5s ease-in;
+}

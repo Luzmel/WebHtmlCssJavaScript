@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css" />
+
+    <title>Kilometro 0 - Agencia de viajes</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/img/logo.png"
+        class="logo"
+        alt="logobrujula"
+      />
+      <nav>
+        <!-- ------------------------------------------    MENU HAMBURGUESA    ---------------------------------------------- -->
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </label>
+        <ul class="navbar-list">
+          <li><a class="navbar-a" href="#mainhero">Inicio</a></li>
+          <li><a class="navbar-a" href="#mainbeneficios">Beneficios</a></li>
+          <li><a class="navbar-a" href="#maindestinos">Destinos</a></li>
+          <li><a class="navbar-a" href="#maincontacto">Contacto</a></li>
+        </ul>
+
+        <!-- ------------------------------------------    CARRO DE COMPRAS    --------------------------------------------- -->
+      <label>          <i class="fa-solid fa-cart-shopping cart-icon"><div class="carro-burbuja">0</div></i>        
+      </label>
+        <div class="divcarro">
+          <h2>Tus compras</h2>
+
+          <div class="cart-container"></div>
+
+          <span class="divider"></span>
+
+          <div class="cart-total">
+            <p class="total1">Total:</p>
+            <span class="total2">0</span>
+          </div>
+          <button class="btn-buy">Comprar</button>
+          <button class="btn-delete">Vaciar carrito</button>
+        </div>
+
+
+        <!-- ----------------------------------------------  Fin carro de compras ---------------------------------------------- -->
+        <a href="./login.html"  class="logousuarios"
+          ><i class="fa-solid fa-user logousuario"></i></a>
+          <div class="overlay"></div>
+
+      </nav>
+    </header>
+    <main>
+      <section id="mainhero">
+        <div class="mainhero__img">
+            <div class="mainhero__divtexto">
+              <h1>¡Elegí tu próximo destino!</h1>
+              <h2>Nosotros nos encargamos del resto</h2>
+              <div class="hero-divbotones">
+                <a  href="./login.html"><button class="hero-btnRegistrate btn"><i class="fa-solid fa-user userboton"></i>Registrate</button></a>
+                <a href="#maindestinos"><button class="hero-btnDestinos btn"><i class="fa-solid fa-plane"></i>Destinos</button></a>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- ---------------------------------------------    BENEFICIOS    -------------------------------------------- -->
+      <section id="mainbeneficios">
+        <h3>
+         Que tus vacaciones sean lo único que deben ser:
+          ¡espectaculares!
+        </h3>
+        <div class="beneficioscontenedor">
+          <div class="divcard">
+            <div class="divcard-up">
+              <img src="./assets/img/pack.png" class="imgpack" />
+              <span>Packs</span>
+            </div>
+            <p>
+              Elegi el pack que mas te guste: hospedaje y viaje, hospedaje o
+              viaje.
+            </p>
+          </div>
+          <div class="divcard">
+            <div class="divcard-up">
+              <img src="./assets/img/excursion.png" class="imgexcursion" />
+              <span>Excursiones</span>
+            </div>
+            <p>
+              Para poder conocer el lugar de manera mas organizada y segura.
+            </p>
+          </div>
+          <div class="divcard">
+            <div class="divcard-up">
+              <img src="./assets/img/descuentos.png" class="imgdescuento" />
+              <span>Descuentos</span>
+            </div>
+            <p>Contamos con descuentos para jubilados y estudiantes.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------------------------------    Destinos    ---------------------------------------------- -->
+      <section id="maindestinos">
+         <div class="categorias">
+          <button class="category active" >Todos</button>
+          <button class="category" data-category="America">America</button>
+          <button class="category" data-category="Argentina">Argentina</button>
+          <button class="category" data-category="Europa">Europa</button>
+        </div>
+        <div class="divdestinos">   
+      </div>
+      </section>
+      <!--  ------------------------------------------    CONTACTO     ------------------------------------------->
+      <section id="maincontacto">
+        <div class="contenedorcontacto">
+          <div class="divmapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.6380301036456!2d-66.33911363524166!3d-33.302131497300664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d439543c5626fd%3A0x2db156e2f81d99f9!2sPlaza%20Pringles%2C%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1666906570665!5m2!1ses-419!2sar"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="divcontacto-down">
+            <div class="divform">
+              <form>
+                <!-- form de contacto -->
+                <h2>Enviar mensaje</h2>
+                <div><textarea placeholder = 'Ingrese su mensaje aquí'"
+                  placeholder="Ingrese su mensaje aquí" class="contacto-datos"></textarea></div>
+                  <div class="divinputs"> 
+                    <div class="divinput-50">
+                <div>
+                  <input class=" contacto-datos input-nombre" name="name" id="name" type="text"
+                  placeholder = 'Nombre completo'" placeholder="Ingrese
+                  nombre completo">
+                </div>
+                <div>
+                  <input class="contacto-datos input-correo" name="correo" id="correo"
+                  type="text" placeholder = 'E-mail'"
+                  placeholder="E-mail">
+                </div>
+              </div>
+                <div class="divinput-50">
+                <div class=>
+                  <input class="contacto-datos input-asunto" name="asunto" id="asunto"
+                  type="text" placeholder = 'Asunto'"
+                  placeholder="Asunto">
+                </div>
+                <div class=>
+                  <input class="contacto-datos input-telefono" name="telefono" id="telefono"
+                  type="text" placeholder = 'Telefono'"
+                  placeholder="Telefono">
+                </div>
+              </div>
+
+              </div>
+              
+                <input type="submit" value="Enviar" class="submit-contacto btn"/>
+              </form>
+            </div>
+            <div class="divdatos">
+              <!-- datos de la pagina -->
+              <div class="divdatos-item">
+                <img src="./assets/img/domiciliologo.png" class="datoslogo" alt="logo-domicilio">
+                <div class="divdatos-item2">
+                  <span>San Luis - Argentina</span>
+                  <p>Av. España 365 - CP 5700</p>
+                </div> 
+              </div>
+              <div class="divdatos-item">
+                <img src="./assets/img/celularlogo.png" class="datoslogo" alt="logo-celular">
+                <div class="divdatos-item2">
+                  <span>+54 (0266) 445 2###</span>
+                  <p>Lun a Vie - 9am a 6pm
+                  </p>
+                </div> 
+              </div>
+              <div class="divdatos-item">
+                <img src="./assets/img/correologo.png" class="datoslogo" alt="logo-correo">
+                <div class="divdatos-item2">
+                  <span>agencia@deviajes.com</span>
+                  <p>¡Envíanos tu consulta cuando quieras!</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-div-logo">   <img
+        src="./assets/img/logo-footer.png"
+        href="index.html"
+        class="logok0footer"
+        alt="logobrujula"
+      /></div>
+      <p>Copyright ©2022 Todos los derechos reservados |  <span>Kilometro 0</span></p>
+<div class="footer-div-logos">
+  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook logofooter"></i></a>
+  <a href="https://www.instagram.com/" target="_blank" ><i class="fa-brands fa-instagram logofooter"></i></a>
+  <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-square-twitter logofooter"></i></a>
+  <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube logofooter"></i></a>
+</div>
+    </footer>
+    <div class="modalMsj"></div>
+    <script src="./data.js"></script>
+    <script src="./assets/main.js"></script>
+    </body>
+</html>
