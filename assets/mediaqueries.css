@@ -378,7 +378,9 @@
   }
 
   /* ---------------------------------------     DESTINOS    -------------------------------------------- */
-
+  #maindestinos {
+    height: 150vh;
+  }
   /* div categorias botones */
   .categorias {
     margin-top: 30px;
