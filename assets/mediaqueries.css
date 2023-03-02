@@ -400,6 +400,7 @@
     border-radius: 8px;
     letter-spacing: 0.5px;
   }
+  /* div donde se ingresan las cards destinos */
   .divdestinos {
     gap: 8px;
     padding: 10px;
