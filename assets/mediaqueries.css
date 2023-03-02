@@ -399,8 +399,11 @@
     border-radius: 8px;
     letter-spacing: 0.5px;
   }
+  #maindestinos {
+    min-height: 100vh;
+  }
   .divdestinos {
-    gap: 5px;
+    gap: 10px;
   }
 
   .card-destino {
