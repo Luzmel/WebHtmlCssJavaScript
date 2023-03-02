@@ -194,7 +194,7 @@ const renderBurbuja = () => {
 };
 // habilitar / deabilitar botones del carrito
 const desabilitarBtn = (btn) => {
-  if (!cart.lenght) {
+  if (!cart.length) {
     btn.classList.add("disabled");
   } else {
     btn.classList.remove("disabled");
@@ -315,6 +315,30 @@ const cantidadesCarrito = (e) => {
   checkEstadoCarrito();
 };
 
+const resetearCarrito = () => {
+  cart = [];
+  checkEstadoCarrito();
+};
+
+const confirmarOvaciarCarro = (msjAntes, msjDespues) => {
+  if (!cart.length) return;
+  if (window.confirm(msjAntes)) {
+    resetearCarrito();
+    alert(msjDespues);
+  }
+};
+
+const confirmarCompra = () => {
+  confirmarOvaciarCarro(
+    "¿Desea confirmar su compra?",
+    "¡ Gracias por su compra !"
+  );
+};
+
+const vaciarCarrito = () => {
+  confirmarOvaciarCarro("¿Desea vaciar el carrito?", "Su carrito esta vacio");
+};
+
 const init = () => {
   renderizarCards();
   btnsCategorias.addEventListener("click", aplicarFiltro);
@@ -328,6 +352,8 @@ const init = () => {
   document.addEventListener("DOMContentLoaded", renderBurbuja);
   divDestinos.addEventListener("click", agregarAlCarrito);
   cartContainer.addEventListener("click", cantidadesCarrito);
+  btnComprar.addEventListener("click", confirmarCompra);
+  btnVaciar.addEventListener("click", vaciarCarrito);
   desabilitarBtn(btnVaciar);
   desabilitarBtn(btnComprar);
 };

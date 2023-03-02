@@ -114,18 +114,27 @@ nav {
     rgb(235, 226, 226),
     rgba(196, 195, 195, 0.788)
   );
+  display: flex;
+
   flex-direction: column;
   gap: 30px;
   height: calc(100vh - 75px);
   z-index: 2;
   overflow-y: scroll;
-  display: flex;
   transform: translate(200%);
   transition: all 0.3s cubic-bezier(0.92, 0.01, 0.35, 0.99);
 }
 .open-cart {
   transform: translate(0%);
   transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  gap: 10px;
 }
 
 .carro-imgvene {
@@ -155,6 +164,7 @@ nav {
 .cart-item {
   border: solid 2px var(--color5);
   border-radius: 15px;
+  width: 100%;
 }
 
 .item-info {
@@ -243,6 +253,7 @@ nav {
 .divider {
   margin-top: 5px;
   border: 0.5px solid var(--color5);
+  width: 100%;
 }
 .card-total {
   display: flex;
@@ -284,7 +295,7 @@ nav {
   cursor: pointer;
 }
 .btn-delete {
-  background-color: rgb(170, 168, 168);
+  background-color: var(--color2);
   color: var(--color5);
   letter-spacing: 1px;
 }

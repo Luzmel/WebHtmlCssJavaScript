@@ -293,6 +293,19 @@
   .logo {
     height: 55px;
   }
+  /* menu carrito */
+  .divcarro {
+    width: min(100%, 380px);
+    padding: 10px;
+  }
+  .cart-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .cart-item {
+    width: 100%;
+  }
+
   /* *************************      Login registro ************************ */
   /* quitar el borde del medio en horizontal,
   cuando pase a vertical */
