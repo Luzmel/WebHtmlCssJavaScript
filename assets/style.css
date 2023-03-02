@@ -621,7 +621,8 @@ main {
 }
 /* div botones de categorias */
 .categorias {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -659,6 +660,7 @@ main {
   gap: 30px;
   padding: 50px;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .card-destino {
