@@ -378,9 +378,7 @@
   }
 
   /* ---------------------------------------     DESTINOS    -------------------------------------------- */
-  #maindestinos {
-    height: 150vh;
-  }
+
   /* div categorias botones */
   .categorias {
     margin-top: 30px;
@@ -402,12 +400,12 @@
     letter-spacing: 0.5px;
   }
   .divdestinos {
-    gap: 10px;
+    gap: 18px;
   }
 
   .card-destino {
     display: flex;
-    height: 240px;
+    height: 260px;
     width: 100%;
   }
 
@@ -422,7 +420,7 @@
   }
 
   .dimg {
-    height: 180px;
+    height: 200px;
     width: 100%;
   }
 
