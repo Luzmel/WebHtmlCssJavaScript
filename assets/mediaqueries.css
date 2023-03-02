@@ -400,13 +400,12 @@
     letter-spacing: 0.5px;
   }
   .divdestinos {
-    gap: 18px;
-    min-height: 150vh;
+    gap: 10px;
   }
 
   .card-destino {
     display: flex;
-    height: 250px;
+    height: 240px;
     width: 100%;
   }
 
@@ -421,7 +420,7 @@
   }
 
   .dimg {
-    height: 190px;
+    height: 180px;
     width: 100%;
   }
 
