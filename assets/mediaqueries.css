@@ -404,6 +404,7 @@
   }
   .divdestinos {
     gap: 10px;
+    min-height: 100vh;
   }
 
   .card-destino {
