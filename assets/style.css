@@ -616,7 +616,6 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--color5);
-  gap: 10px;
 }
 /* div botones de categorias */
 .categorias {
