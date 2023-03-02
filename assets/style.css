@@ -610,6 +610,8 @@ main {
 
 /* -------------------------------------    Destinos    -------------------------------------- */
 #maindestinos {
+  min-height: 100vh;
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -650,7 +652,6 @@ main {
   transform: scale(1.05);
 }
 .divdestinos {
-  min-height: 100vh;
   width: min(100%, 1300px);
   display: flex;
   align-items: center;
