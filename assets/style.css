@@ -610,13 +610,13 @@ main {
 
 /* -------------------------------------    Destinos    -------------------------------------- */
 #maindestinos {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color5);
+  gap: 10px;
 }
 /* div botones de categorias */
 .categorias {
