@@ -148,7 +148,7 @@ const templateCardCarro = (cartDestino) => {
     <div class="item-bid-info">
       <h3 class="item-title">${nombre}</h3>
       <p class="item-bid">${descripcion}</p>
-      <p class="item-bid">1 Persona</p>
+      <p class="item-bid">Precio por persona</p>
     </div>
     <div class="item-bid-price">
       <span class="item-price">${precio}</span>
