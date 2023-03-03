@@ -408,12 +408,12 @@
 
   .card-destino {
     display: flex;
-    height: 260px;
-    width: 100%;
+    height: 320px;
+    width: 360px;
   }
 
   .card-destino-down {
-    height: 110px;
+    height: auto;
     width: 100%;
   }
 
@@ -423,7 +423,7 @@
   }
 
   .dimg {
-    height: 200px;
+    height: 180px;
     width: 100%;
   }
 
