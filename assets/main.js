@@ -222,7 +222,7 @@ const agregarAlCarrito = (e) => {
     msjModalCarrito("La cantidad se aumento con exito al carrito");
   } else {
     crearCardCarrito(product);
-    msjModalCarrito("La agrego el destino al carrito");
+    msjModalCarrito("Se agrego el destino al carrito");
   }
   checkEstadoCarrito();
 };
